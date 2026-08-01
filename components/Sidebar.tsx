@@ -1,22 +1,11 @@
 "use client";
 
-import { Phone, Bike } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <aside className="hidden md:flex fixed left-0 top-0 bottom-0 z-50 w-16 bg-[#040E10]/95 backdrop-blur-lg border-r border-[#122e32] flex-col justify-between items-center py-6 select-none transition-all shadow-2xl">
+    <aside className="hidden md:flex fixed left-0 top-0 bottom-0 z-50 w-16 bg-[#040E10]/95 backdrop-blur-lg border-r border-[#122e32] flex-col justify-center items-center py-6 select-none transition-all shadow-2xl">
       
-      {/* Top Brand Indicator (Without 3-line hamburger menu toggle) */}
-      <a
-        href="#home"
-        aria-label="StreetRider Home"
-        className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 p-0.5 shadow-lg shadow-cyan-500/20 hover:scale-105 transition-transform flex items-center justify-center group"
-      >
-        <div className="w-full h-full bg-[#051416] rounded-[10px] flex items-center justify-center">
-          <Bike className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
-        </div>
-      </a>
-
       {/* Center Social Media Icons & Direct Call Action */}
       <div className="flex flex-col items-center gap-5 sm:gap-6">
         
@@ -73,11 +62,6 @@ export default function Sidebar() {
             <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/>
           </svg>
         </a>
-      </div>
-
-      {/* Bottom Vertical Brand Text */}
-      <div className="writing-mode-vertical text-[9px] font-heading font-extrabold tracking-[0.3em] text-slate-500 uppercase rotate-180 opacity-75">
-        STREET<span className="text-cyan-400">RIDER</span>
       </div>
 
     </aside>
