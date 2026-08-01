@@ -96,7 +96,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] pt-24 pb-4 flex flex-col justify-between overflow-hidden bg-[radial-gradient(ellipse_at_center,_#0f282b_0%,_#091d20_50%,_#040e10_100%)] text-slate-100 pl-12 sm:pl-16 pr-4 sm:pr-8 select-none"
+      className="relative min-h-[90vh] sm:min-h-[92vh] pt-20 sm:pt-24 pb-4 flex flex-col justify-between overflow-hidden bg-[radial-gradient(ellipse_at_center,_#0f282b_0%,_#091d20_50%,_#040e10_100%)] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 select-none"
     >
       {/* Oversized Watermark Text in Background */}
       <div className="absolute top-28 left-1/2 -translate-x-1/2 select-none pointer-events-none z-0 text-center w-full">

@@ -4,7 +4,7 @@ import { MapPin, Phone, Building2 } from "lucide-react";
 
 export default function LocationsSection() {
   return (
-    <section id="locations" className="py-20 bg-[#061517] text-slate-100 pl-12 sm:pl-16 border-t border-[#122e32] relative">
+    <section id="locations" className="py-14 sm:py-20 bg-[#061517] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 border-t border-[#122e32] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         
         <div className="text-center max-w-2xl mx-auto mb-14">

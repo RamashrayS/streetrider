@@ -4,7 +4,7 @@ import { MapPin, Phone, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#040e10] border-t border-[#122e32] text-slate-300 pl-12 sm:pl-16 pt-16 pb-8 select-none">
+    <footer className="bg-[#040e10] border-t border-[#122e32] text-slate-300 px-4 sm:px-6 md:pl-20 md:pr-8 pt-12 sm:pt-16 pb-8 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
           

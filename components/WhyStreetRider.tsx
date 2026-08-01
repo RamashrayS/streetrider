@@ -47,7 +47,7 @@ export default function WhyStreetRider() {
   ];
 
   return (
-    <section id="why-us" className="py-20 bg-[#051113] text-slate-100 pl-12 sm:pl-16 border-t border-[#122e32] relative">
+    <section id="why-us" className="py-14 sm:py-20 bg-[#051113] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 border-t border-[#122e32] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 text-xs font-heading tracking-widest text-cyan-400 uppercase mb-2">

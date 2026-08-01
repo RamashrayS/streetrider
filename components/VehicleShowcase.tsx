@@ -117,7 +117,7 @@ export default function VehicleShowcase({ onOpenBooking }: VehicleShowcaseProps)
   });
 
   return (
-    <section id="vehicles" className="py-20 bg-[#061517] text-slate-100 pl-12 sm:pl-16 relative overflow-hidden border-t border-[#122e32]">
+    <section id="vehicles" className="py-14 sm:py-20 bg-[#061517] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 relative overflow-hidden border-t border-[#122e32]">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-cyan-900/10 blur-[140px] rounded-full pointer-events-none" />
 

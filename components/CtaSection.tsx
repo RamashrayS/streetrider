@@ -8,7 +8,7 @@ interface CtaSectionProps {
 
 export default function CtaSection({ onOpenBooking }: CtaSectionProps) {
   return (
-    <section className="py-20 bg-[#061517] text-slate-100 pl-12 sm:pl-16 border-t border-[#122e32] relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-[#061517] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 border-t border-[#122e32] relative overflow-hidden">
       {/* Background Lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-cyan-900/20 blur-[150px] rounded-full pointer-events-none" />
 

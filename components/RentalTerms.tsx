@@ -16,7 +16,7 @@ export default function RentalTerms() {
   ];
 
   return (
-    <section id="terms" className="py-20 bg-[#051113] text-slate-100 pl-12 sm:pl-16 border-t border-[#122e32] relative">
+    <section id="terms" className="py-14 sm:py-20 bg-[#051113] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 border-t border-[#122e32] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         <div className="max-w-3xl mx-auto bg-[#081a1c] border border-[#16383d] rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
           

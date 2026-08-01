@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about-us"
-      className="relative py-16 bg-[radial-gradient(ellipse_at_center,_#0f282b_0%,_#071719_60%,_#051214_100%)] text-slate-100 pl-12 sm:pl-16 border-t border-[#102d31] overflow-hidden select-none"
+      className="relative py-12 sm:py-16 bg-[radial-gradient(ellipse_at_center,_#0f282b_0%,_#071719_60%,_#051214_100%)] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 border-t border-[#102d31] overflow-hidden select-none"
     >
       {/* Rider Banner Image with Fading Overlay */}
       <div className="relative w-full h-[240px] sm:h-[320px] overflow-hidden">

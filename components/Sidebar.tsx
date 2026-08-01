@@ -4,7 +4,7 @@ import { Phone, Bike } from "lucide-react";
 
 export default function Sidebar() {
   return (
-    <aside className="fixed left-0 top-0 bottom-0 z-50 w-12 sm:w-16 bg-[#040E10]/95 backdrop-blur-lg border-r border-[#122e32] flex flex-col justify-between items-center py-6 select-none transition-all shadow-2xl">
+    <aside className="hidden md:flex fixed left-0 top-0 bottom-0 z-50 w-16 bg-[#040E10]/95 backdrop-blur-lg border-r border-[#122e32] flex-col justify-between items-center py-6 select-none transition-all shadow-2xl">
       
       {/* Top Brand Indicator (Without 3-line hamburger menu toggle) */}
       <a

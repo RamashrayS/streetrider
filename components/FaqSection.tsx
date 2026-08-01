@@ -42,7 +42,7 @@ export default function FaqSection() {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-[#051113] text-slate-100 pl-12 sm:pl-16 border-t border-[#122e32] relative">
+    <section id="faq" className="py-14 sm:py-20 bg-[#051113] text-slate-100 px-4 sm:px-6 md:pl-20 md:pr-8 border-t border-[#122e32] relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-8 relative z-10">
         
         <div className="text-center max-w-2xl mx-auto mb-12">

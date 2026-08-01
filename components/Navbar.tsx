@@ -65,7 +65,7 @@ export default function Navbar({
   ];
 
   return (
-    <header className="fixed top-0 left-12 sm:left-16 right-0 z-40 bg-gradient-to-b from-[#051416] via-[#051416]/90 to-transparent py-4 sm:py-5 px-4 sm:px-10 select-none transition-all backdrop-blur-md border-b border-white/5">
+    <header className="fixed top-0 left-0 md:left-16 right-0 z-40 bg-gradient-to-b from-[#051416] via-[#051416]/95 to-transparent py-3 sm:py-5 px-4 sm:px-10 select-none transition-all backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
         {/* Brand Logo */}
