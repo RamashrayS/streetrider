@@ -1,0 +1,85 @@
+"use client";
+
+import { Phone, Bike } from "lucide-react";
+
+export default function Sidebar() {
+  return (
+    <aside className="fixed left-0 top-0 bottom-0 z-50 w-12 sm:w-16 bg-[#040E10]/95 backdrop-blur-lg border-r border-[#122e32] flex flex-col justify-between items-center py-6 select-none transition-all shadow-2xl">
+      
+      {/* Top Brand Indicator (Without 3-line hamburger menu toggle) */}
+      <a
+        href="#home"
+        aria-label="StreetRider Home"
+        className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 p-0.5 shadow-lg shadow-cyan-500/20 hover:scale-105 transition-transform flex items-center justify-center group"
+      >
+        <div className="w-full h-full bg-[#051416] rounded-[10px] flex items-center justify-center">
+          <Bike className="w-4 h-4 text-cyan-400 group-hover:scale-110 transition-transform" />
+        </div>
+      </a>
+
+      {/* Center Social Media Icons & Direct Call Action */}
+      <div className="flex flex-col items-center gap-5 sm:gap-6">
+        
+        {/* Direct Call Button */}
+        <a
+          href="tel:9730414703"
+          aria-label="Call StreetRider"
+          title="Call 9730414703"
+          className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400 hover:text-black flex items-center justify-center transition-all shadow-[0_0_12px_rgba(34,211,238,0.35)] hover:scale-110"
+        >
+          <Phone className="w-4 h-4" />
+        </a>
+
+        <div className="w-6 h-[1px] bg-white/10 my-1" />
+
+        {/* Instagram SVG */}
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          title="Instagram"
+          className="text-slate-400 hover:text-cyan-400 transition-colors p-1.5 hover:scale-110"
+        >
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+
+        {/* X / Twitter SVG */}
+        <a
+          href="https://x.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          title="X (Twitter)"
+          className="text-slate-400 hover:text-cyan-400 transition-colors p-1.5 hover:scale-110"
+        >
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+
+        {/* Facebook SVG */}
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          title="Facebook"
+          className="text-slate-400 hover:text-cyan-400 transition-colors p-1.5 hover:scale-110"
+        >
+          <svg className="w-4 h-4 sm:w-5 sm:h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/>
+          </svg>
+        </a>
+      </div>
+
+      {/* Bottom Vertical Brand Text */}
+      <div className="writing-mode-vertical text-[9px] font-heading font-extrabold tracking-[0.3em] text-slate-500 uppercase rotate-180 opacity-75">
+        STREET<span className="text-cyan-400">RIDER</span>
+      </div>
+
+    </aside>
+  );
+}

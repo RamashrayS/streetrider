@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg-dark: #0B0F16;
+    --navy-deep: #081C3A;
+    --blue-accent: #2563EB;
+    --yellow-secondary: #F4B400;
+    --red-cta: #D62828;
+    --card-bg: rgba(255, 255, 255, 0.04);
+    --border-glass: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    background-color: #0B0F16;
+    color: #f1f5f9;
+    font-family: var(--font-outfit), sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-heading {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
+
+/* Glassmorphism components */
+.glass-card {
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 25px 60px rgba(37, 99, 235, 0.15), 0 0 20px rgba(37, 99, 235, 0.1);
+  transform: translateY(-4px);
+}
+
+.glass-nav {
+  background: rgba(11, 15, 22, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Outlined oversized watermark typography */
+.text-stroke-faded {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.08);
+  color: transparent;
+  user-select: none;
+}
+
+.text-stroke-accent {
+  -webkit-text-stroke: 1px rgba(37, 99, 235, 0.25);
+  color: transparent;
+}
+
+/* Glow effects */
+.glow-blue {
+  box-shadow: 0 0 40px rgba(37, 99, 235, 0.35);
+}
+
+.glow-blue-lg {
+  box-shadow: 0 0 80px rgba(37, 99, 235, 0.5);
+}
+
+.glow-yellow {
+  box-shadow: 0 0 35px rgba(244, 180, 0, 0.3);
+}
+
+.glow-red {
+  box-shadow: 0 0 40px rgba(214, 40, 40, 0.4);
+}
+
+/* Floating animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}
+
